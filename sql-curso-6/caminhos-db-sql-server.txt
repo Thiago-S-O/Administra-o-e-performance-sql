@@ -1,0 +1,12 @@
+
+Uma base de dados SQL Server é dividida em duas partes
+
+Arquivo físico onde vão estar os dados
+ - criado no caminho: D:\DATA\ARQUIVO_DADOS\dbVendas.MDF
+
+Arquivo físico dos logs de transações que são os comandos salvos para recuperar possíveis dados perdidos durante o processo de inclusão, alterações, exclusão ou consulta.
+ - criado no caminho: D:\DATA\LOG_TRANSACOES\dbVendasLOG.LDF
+
+Quando iniciamos uma transação no banco de dados, salvamos os comandos dentro do log de transação. Dessa forma, ao dar um commit, salvamos os comandos na base de dados. Se damos um rollback, voltamos a posição do banco no momento em que começamos a transação.
+
+O log de transação faz esse gerenciamento de salvar os dados de forma provisória antes de serem confirmados e gravadas na base de dados.
