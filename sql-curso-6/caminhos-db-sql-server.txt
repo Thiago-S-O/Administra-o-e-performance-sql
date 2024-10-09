@@ -10,3 +10,53 @@ Arquivo físico dos logs de transações que são os comandos salvos para recupe
 Quando iniciamos uma transação no banco de dados, salvamos os comandos dentro do log de transação. Dessa forma, ao dar um commit, salvamos os comandos na base de dados. Se damos um rollback, voltamos a posição do banco no momento em que começamos a transação.
 
 O log de transação faz esse gerenciamento de salvar os dados de forma provisória antes de serem confirmados e gravadas na base de dados.
+--------------------------
+EXERCÍCIO
+
+Dentre as atividades de um profissional de DBA é fundamental a criação da base de dados. Nesse sentido, foi solicitado ao nosso personagem Marcos que fosse criada uma base de dados chamada VENDAS .
+
+Baseado nas características mencionadas abaixo especifique o comando SQL para criar a seguinte base de dados:
+
+Nome VENDAS
+
+Primário:
+
+Nome lógico: VENDAS
+
+Localização: c:\bases
+
+Nome físico: VENDAS (Você deve, no comando, incluir a extensão correta para este tipo de arquivo)
+
+Tamanho inicial: 200MB
+
+Tamanho máximo: 500MB
+
+Taxa de crescimento: 50MB
+
+Secundário:
+
+Nome lógico: VENDAS_AUX
+
+Localização: c:\bases
+
+Nome físico: VENDAS_AUX (Você deve, no comando, incluir a extensão correta para este tipo de arquivo)
+
+Tamanho inicial: 100MB
+
+Tamanho máximo: 250MB
+
+Taxa de crescimento: 20MB
+
+Log:
+
+Nome lógico: VENDAS_LOG
+
+Localização: c:\bases
+
+Nome físico: VENDAS_LOG (Você deve, no comando, incluir a extensão correta para este tipo de arquivo)
+
+Tamanho inicial: 50MB
+
+Tamanho máximo: 300MB
+
+Taxa de crescimento: 40MB
